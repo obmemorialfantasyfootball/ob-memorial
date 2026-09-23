@@ -15,7 +15,7 @@ nav a{color:#111;text-decoration:none;font-weight:bold}.wrap{max-width:1050px;ma
 .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px}.btn{display:inline-block;background:#111;color:#fff;text-decoration:none;padding:12px 18px;border-radius:8px;font-weight:bold}.btn.alt{background:#eee;color:#111;border:1px solid #ccc}
 h2{margin-top:0;border-bottom:2px solid #111;padding-bottom:8px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
 table{width:100%;border-collapse:collapse}th,td{padding:8px 6px;border-bottom:1px solid #ddd;text-align:left}th:last-child,td:last-child{text-align:right}
-.winner{font-weight:bold}.small{font-size:14px;color:#625b52}.weeklinks a{display:block;margin:7px 0;color:#3d2d19}.scoregrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.scoregroup{border:1px solid #ddd;border-radius:8px;padding:12px}.scoregroup h4{margin:0 0 7px}.scoregroup p{margin:3px 0}.rulesgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.rulebox{border:1px solid #ddd;border-radius:8px;padding:12px}.rulebox h3{margin-top:0}details{margin-top:12px}summary{cursor:pointer;font-weight:bold}footer{text-align:center;color:#6a6258;font-size:13px;padding:25px}
+.winner{font-weight:bold}.small{font-size:14px;color:#625b52}.weeklinks a{display:block;margin:7px 0;color:#3d2d19}.scoregrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.scoregroup{border:1px solid #ddd;border-radius:8px;padding:12px}.scoregroup h4{margin:0 0 7px}.scoregroup p{margin:3px 0}.rulesbody{max-width:820px;margin:0 auto}.rulesbody h3{margin:24px 0 8px;border-bottom:1px solid #d8d0c2;padding-bottom:5px;text-transform:uppercase;letter-spacing:.4px}.rulesbody p{margin:8px 0}.rules-table{width:100%;max-width:620px;margin:10px 0 18px}.rules-table th,.rules-table td{padding:6px 8px}.rules-note{font-style:italic;color:#625b52}details{margin-top:12px}summary{cursor:pointer;font-weight:bold}footer{text-align:center;color:#6a6258;font-size:13px;padding:25px}
 @media(max-width:600px){.wrap{padding:18px 12px}.hero,.card{padding:18px}nav{position:static}}
 </style>
 </head>
@@ -63,14 +63,25 @@ table{width:100%;border-collapse:collapse}th,td{padding:8px 6px;border-bottom:1p
 </div></details>
 <p class="small">Week 1 player scores will be added here after the archived Week 1 score sheet is converted into web-ready totals.</p></section>
 <section id="rules" class="card"><h2>Official Rules</h2>
-<p>Everything needed to understand the contest is now available here on the website.</p>
-<div class="rulesgrid">
-<div class="rulebox"><h3>How to Play</h3><p>Pick one choice from each of Groups 1-14: 2 QBs, 4 RBs, 4 WRs, 1 TE, 1 kicker, 1 NFC D/ST and 1 AFC D/ST. Only teams playing Sunday at 1:00 PM ET or later are eligible. Weekly player pools are set when the sheet is created; if a listed player later becomes unavailable, the selection stands.</p></div>
-<div class="rulebox"><h3>Rush / Receive / Return TD</h3><p>0-9 yd: 8 &nbsp;|&nbsp; 10-19: 10 &nbsp;|&nbsp; 20-29: 12 &nbsp;|&nbsp; 30-39: 14 &nbsp;|&nbsp; 40-49: 16 &nbsp;|&nbsp; 50-59: 18 &nbsp;|&nbsp; 60-69: 20 &nbsp;|&nbsp; 70-79: 22 &nbsp;|&nbsp; 80-89: 24 &nbsp;|&nbsp; 90-99: 26</p></div>
-<div class="rulebox"><h3>Passing TD</h3><p>0-14 yd: 4 &nbsp;|&nbsp; 15-29: 6 &nbsp;|&nbsp; 30-44: 8 &nbsp;|&nbsp; 45-59: 10 &nbsp;|&nbsp; 60-74: 12 &nbsp;|&nbsp; 75-89: 14 &nbsp;|&nbsp; 90-99: 16</p></div>
-<div class="rulebox"><h3>Field Goals</h3><p>0-19 yd: 4 &nbsp;|&nbsp; 20-29: 5 &nbsp;|&nbsp; 30-39: 6 &nbsp;|&nbsp; 40-49: 8 &nbsp;|&nbsp; 50-59: 10 &nbsp;|&nbsp; 60+: 13</p></div>
-<div class="rulebox"><h3>Extra Points &amp; D/ST</h3><p>PAT: 1 point. Successful 2-point conversion by rush, reception or pass: 4 points. D/ST return TDs use the distance table above. Safety: 5 points. Shutout: 10 points.</p></div>
-<div class="rulebox"><h3>Weekly Bonus</h3><p>Predict the combined final score of the designated Sunday game. A prediction within 7 points above or below the actual combined score earns 5 bonus points.</p></div>
+<div class="rulesbody">
+<p>The scoring system for The OB Memorial Fantasy Football Challenge may be somewhat convoluted, but the object of the game is simple: pick the players you think will have the best games this weekend.</p>
+<h3>How to Play</h3>
+<p>Pick one player from each subset of players listed in Groups 1 through 12, including a total of 2 quarterbacks, 4 running backs, 4 wide receivers, 1 tight end, and 1 kicker. Then pick 1 NFC defense from Group 13 and 1 AFC defense from Group 14. That gives you 14 total picks - one from each group - for that particular Sunday.</p>
+<p>Only teams playing Sunday at 1:00 PM ET or later are eligible. Weekly player pools are set when the sheet is created. If a listed player is later ruled out, injured, or otherwise unavailable, that is part of the risk of the selection.</p>
+<h3>Rushing, Receiving, or Return Touchdowns</h3>
+<table class="rules-table"><thead><tr><th>Play Length</th><th>Points</th></tr></thead><tbody><tr><td>0-9 yards</td><td>8</td></tr><tr><td>10-19 yards</td><td>10</td></tr><tr><td>20-29 yards</td><td>12</td></tr><tr><td>30-39 yards</td><td>14</td></tr><tr><td>40-49 yards</td><td>16</td></tr><tr><td>50-59 yards</td><td>18</td></tr><tr><td>60-69 yards</td><td>20</td></tr><tr><td>70-79 yards</td><td>22</td></tr><tr><td>80-89 yards</td><td>24</td></tr><tr><td>90-99 yards</td><td>26</td></tr></tbody></table>
+<h3>Passing Touchdowns</h3>
+<table class="rules-table"><thead><tr><th>Play Length</th><th>Points</th></tr></thead><tbody><tr><td>0-14 yards</td><td>4</td></tr><tr><td>15-29 yards</td><td>6</td></tr><tr><td>30-44 yards</td><td>8</td></tr><tr><td>45-59 yards</td><td>10</td></tr><tr><td>60-74 yards</td><td>12</td></tr><tr><td>75-89 yards</td><td>14</td></tr><tr><td>90-99 yards</td><td>16</td></tr></tbody></table>
+<h3>Field Goals</h3>
+<table class="rules-table"><thead><tr><th>Play Length</th><th>Points</th></tr></thead><tbody><tr><td>0-19 yards</td><td>4</td></tr><tr><td>20-29 yards</td><td>5</td></tr><tr><td>30-39 yards</td><td>6</td></tr><tr><td>40-49 yards</td><td>8</td></tr><tr><td>50-59 yards</td><td>10</td></tr><tr><td>60+ yards</td><td>13</td></tr></tbody></table>
+<h3>Extra Points</h3>
+<p>Kicker: 1 point for each successful extra-point kick. Two-point conversion: 4 points for successfully rushing, receiving, or passing a 2-point conversion.</p>
+<h3>Defense &amp; Special Teams</h3>
+<p>Your defense/special teams unit scores when anyone on the team returns a fumble, interception, kickoff, punt, or missed field goal for a touchdown. Points are based on the length of the return using the same rushing/receiving touchdown table above.</p>
+<p>Safety: <strong>5 points</strong>. Shutout: <strong>10 points</strong>.</p>
+<h3>5-Point Weekly Bonus</h3>
+<p>Predict the total combined score of the designated Sunday game. If your prediction is within 7 points above or below the actual combined score, add <strong>5 points</strong> to your weekly score.</p>
+<p class="rules-note">New selections are made each week. Good luck!</p>
 </div></section>
 </main><footer>2026 The OB Memorial Fantasy Football Challenge</footer>
 </body></html>

@@ -15,13 +15,13 @@ nav a{color:#111;text-decoration:none;font-weight:bold}.wrap{max-width:1050px;ma
 .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px}.btn{display:inline-block;background:#111;color:#fff;text-decoration:none;padding:12px 18px;border-radius:8px;font-weight:bold}.btn.alt{background:#eee;color:#111;border:1px solid #ccc}
 h2{margin-top:0;border-bottom:2px solid #111;padding-bottom:8px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
 table{width:100%;border-collapse:collapse}th,td{padding:8px 6px;border-bottom:1px solid #ddd;text-align:left}th:last-child,td:last-child{text-align:right}
-.winner{font-weight:bold}.small{font-size:14px;color:#625b52}.weeklinks a{display:block;margin:7px 0;color:#3d2d19}footer{text-align:center;color:#6a6258;font-size:13px;padding:25px}
+.winner{font-weight:bold}.small{font-size:14px;color:#625b52}.weeklinks a{display:block;margin:7px 0;color:#3d2d19}.scoregrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.scoregroup{border:1px solid #ddd;border-radius:8px;padding:12px}.scoregroup h4{margin:0 0 7px}.scoregroup p{margin:3px 0}.rulesgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.rulebox{border:1px solid #ddd;border-radius:8px;padding:12px}.rulebox h3{margin-top:0}details{margin-top:12px}summary{cursor:pointer;font-weight:bold}footer{text-align:center;color:#6a6258;font-size:13px;padding:25px}
 @media(max-width:600px){.wrap{padding:18px 12px}.hero,.card{padding:18px}nav{position:static}}
 </style>
 </head>
 <body>
 <header><h1>The OB Memorial</h1><p>Fantasy Football Challenge</p></header>
-<nav><a href="#current">Current Week</a><a href="#winners">Winners</a><a href="#standings">Standings</a><a href="#player-scores">Player Scores</a><a href="#rules">Rules</a></nav>
+<nav><a href="#current">Current Week</a><a href="#winners">Winners</a><a href="#standings">Standings</a><a href="#results">Results</a><a href="#player-scores">Player Scores</a><a href="#rules">Rules</a></nav>
 <main class="wrap">
 <section id="current" class="hero">
 <div class="eyebrow">Current Week</div><h2 style="border:0">Week 3 — Sunday, September 27, 2026</h2>
@@ -37,10 +37,40 @@ table{width:100%;border-collapse:collapse}th,td{padding:8px 6px;border-bottom:1p
 <table><thead><tr><th>Rank</th><th>Name</th><th>Score</th></tr></thead><tbody>
 <tr><td>1</td><td>Rachel Galyan</td><td>269</td></tr><tr><td>T-2</td><td>Kam Leach</td><td>246</td></tr><tr><td>T-2</td><td>Kyle Helstad</td><td>246</td></tr><tr><td>4</td><td>Jay Head</td><td>236</td></tr><tr><td>5</td><td>Nate Wilson</td><td>218</td></tr><tr><td>6</td><td>Zane Galyan</td><td>211</td></tr><tr><td>7</td><td>Nick Carlsberg</td><td>208</td></tr><tr><td>8</td><td>Barry Galyan</td><td>158</td></tr><tr><td>9</td><td>David Valensi</td><td>92</td></tr>
 </tbody></table></section>
-<section class="card"><h2>Weekly Results</h2><div class="weeklinks"><a href="week-1-results.pdf">Week 1 Results</a><a href="week-2-results.pdf">Week 2 Results &amp; Standings</a></div><p class="small">Week 1 and Week 2 results are available below.</p></section>
+<section id="results" class="card"><h2>Weekly Results</h2>
+<div class="grid"><div><h3>Week 1 - September 13</h3><table><thead><tr><th>Rank</th><th>Name</th><th>Score</th></tr></thead><tbody>
+<tr><td>1</td><td>Kyle Helstad</td><td>149</td></tr><tr><td>2</td><td>Kam Leach</td><td>144</td></tr><tr><td>3</td><td>Rachel Galyan</td><td>139</td></tr><tr><td>4</td><td>Zane Galyan</td><td>108</td></tr><tr><td>5</td><td>Jay Head</td><td>105</td></tr><tr><td>6</td><td>Nate Wilson</td><td>104</td></tr><tr><td>7</td><td>Barry Galyan</td><td>101</td></tr><tr><td>8</td><td>Nick Carlsberg</td><td>91</td></tr>
+</tbody></table></div><div><h3>Week 2 - September 20</h3><table><thead><tr><th>Rank</th><th>Name</th><th>Score</th></tr></thead><tbody>
+<tr><td>1</td><td>Jay Head</td><td>131</td></tr><tr><td>2</td><td>Rachel Galyan</td><td>130</td></tr><tr><td>3</td><td>Nick Carlsberg</td><td>117</td></tr><tr><td>4</td><td>Nate Wilson</td><td>114</td></tr><tr><td>5</td><td>Zane Galyan</td><td>103</td></tr><tr><td>6</td><td>Kam Leach</td><td>102</td></tr><tr><td>7</td><td>Kyle Helstad</td><td>97</td></tr><tr><td>8</td><td>David Valensi</td><td>92</td></tr><tr><td>9</td><td>Barry Galyan</td><td>57</td></tr>
+</tbody></table><p class="small">Bonus: Colts 30, Chiefs 33 (63 total). Predictions from 56-70 earned +5.</p></div></div></section>
 <section id="player-scores" class="card"><h2>Player Scores</h2>
-<div class="weeklinks"><a href="week-1-player-scores.pdf">Week 1 Player Scores</a><a href="week-2-player-scores.pdf">Week 2 Player Scores</a></div>
-<p class="small">Weekly OB scoring totals for every player and D/ST on the selection sheet.</p></section>
-<section id="rules" class="card"><h2>Official Rules</h2><p>The OB Memorial uses distance-based touchdown and field-goal scoring, Sunday eligibility rules, two D/ST selections, and a weekly combined-score bonus.</p><a class="btn alt" href="official-rules.pdf">View Official Rules</a></section>
+<p>Player scoring now lives directly on the website. Open a week below to see every official OB total.</p>
+<details><summary>Week 2 - September 20, 2026</summary><div class="scoregrid">
+<div class="scoregroup"><h4>Group 1 - QB</h4><p>Lamar Jackson (BAL) - 6</p><p>Joe Burrow (CIN) - 14</p><p>Jalen Hurts (PHI) - 10</p><p>Justin Herbert (LAC) - 4</p><p>Patrick Mahomes (KC) - 12</p><p>C.J. Stroud (HOU) - 0</p></div>
+<div class="scoregroup"><h4>Group 2 - QB</h4><p>Baker Mayfield (TB) - 4</p><p>Jordan Love (GB) - 8</p><p>Caleb Williams (CHI) - 0</p><p>Bryce Young (CAR) - 12</p><p>Trevor Lawrence (JAX) - 0</p><p>Bo Nix (DEN) - 4</p></div>
+<div class="scoregroup"><h4>Group 3 - RB</h4><p>Bijan Robinson (ATL) - 0</p><p>Jonathan Taylor (IND) - 20</p><p>Derrick Henry (BAL) - 8</p><p>Breece Hall (NYJ) - 0</p><p>Ashton Jeanty (LV) - 0</p><p>Christian McCaffrey (SF) - 16</p></div>
+<div class="scoregroup"><h4>Group 4 - RB</h4><p>Chase Brown (CIN) - 0</p><p>Omarion Hampton (LAC) - 8</p><p>D'Andre Swift (CHI) - 0</p><p>Bucky Irving (TB) - 0</p><p>Quinshon Judkins (CLE) - 0</p><p>Isiah Pacheco (KC) - 0</p></div>
+<div class="scoregroup"><h4>Group 5 - RB</h4><p>David Montgomery (HOU) - 0</p><p>Travis Etienne Jr. (NO) - 4</p><p>Jaylen Warren (PIT) - 0</p><p>Aaron Jones (MIN) - 0</p><p>Tony Pollard (TEN) - 0</p><p>Jordan Mason (MIN) - 0</p></div>
+<div class="scoregroup"><h4>Group 6 - RB</h4><p>Rico Dowdle (PIT) - 0</p><p>Rachaad White (WAS) - 0</p><p>Brian Robinson Jr. (ATL) - 0</p><p>MarShawn Lloyd (GB) - 8</p><p>Bhayshul Tuten (JAX) - 8</p><p>Chuba Hubbard (CAR) - 8</p></div>
+<div class="scoregroup"><h4>Group 7 - WR</h4><p>Ja'Marr Chase (CIN) - 24</p><p>CeeDee Lamb (DAL) - 20</p><p>Justin Jefferson (MIN) - 0</p><p>Garrett Wilson (NYJ) - 10</p><p>Chris Olave (NO) - 12</p><p>Nico Collins (HOU) - 0</p></div>
+<div class="scoregroup"><h4>Group 8 - WR</h4><p>Zay Flowers (BAL) - 0</p><p>Tee Higgins (CIN) - 0</p><p>DeVonta Smith (PHI) - 12</p><p>Terry McLaurin (WAS) - 0</p><p>Ladd McConkey (LAC) - 0</p><p>Mike Evans (TB) - 0</p></div>
+<div class="scoregroup"><h4>Group 9 - WR</h4><p>Rome Odunze (CHI) - 0</p><p>Tetairoa McMillan (CAR) - 0</p><p>George Pickens (DAL) - 0</p><p>Emeka Egbuka (TB) - 8</p><p>Jayden Reed (GB) - 0</p><p>Brian Thomas Jr. (JAX) - 0</p></div>
+<div class="scoregroup"><h4>Group 10 - WR</h4><p>Michael Pittman Jr. (IND) - 0</p><p>Calvin Ridley (TEN) - 0</p><p>Jaxon Smith-Njigba (SEA) - 42</p><p>Marvin Harrison Jr. (ARI) - 0</p><p>Courtland Sutton (DEN) - 0</p><p>Rashee Rice (KC) - 0</p></div>
+<div class="scoregroup"><h4>Group 11 - TE</h4><p>Trey McBride (ARI) - 8</p><p>Mark Andrews (BAL) - 0</p><p>T.J. Hockenson (MIN) - 0</p><p>Dallas Goedert (PHI) - 0</p><p>David Njoku (CLE) - 0</p><p>Pat Freiermuth (PIT) - 0</p></div>
+<div class="scoregroup"><h4>Group 12 - K</h4><p>Brandon Aubrey (DAL) - 30</p><p>Chris Boswell (PIT) - 10</p><p>Cameron Dicker (LAC) - 2</p><p>Ka'imi Fairbairn (HOU) - 14</p><p>Will Reichard (MIN) - 20</p><p>Evan McPherson (CIN) - 22</p><p>Chase McLaughlin (TB) - 31</p><p>Cam Little (JAX) - 14</p><p>Harrison Butker (KC) - 30</p><p>Wil Lutz (DEN) - 15</p></div>
+<div class="scoregroup"><h4>Group 13 - NFC D/ST</h4><p>Chicago - 0</p><p>Carolina - 10</p><p>Atlanta - 0</p><p>Tampa Bay - 0</p><p>New Orleans - 0</p><p>Arizona - 0</p><p>Green Bay - 0</p><p>Minnesota - 0</p><p>Washington - 0</p><p>Philadelphia - 0</p><p>Dallas - 0</p><p>Seattle - 0</p><p>San Francisco - 0</p></div>
+<div class="scoregroup"><h4>Group 14 - AFC D/ST</h4><p>Baltimore - 0</p><p>Indianapolis - 0</p><p>Pittsburgh - 0</p><p>Cleveland - 0</p><p>Jacksonville - 0</p><p>Cincinnati - 0</p><p>New York Jets - 0</p><p>Tennessee - 0</p><p>Houston - 0</p><p>Los Angeles Chargers - 0</p><p>Miami - 0</p><p>Las Vegas - 5</p><p>Denver - 0</p><p>Kansas City - 0</p><p>New England - 10</p></div>
+</div></details>
+<p class="small">Week 1 player scores will be added here after the archived Week 1 score sheet is converted into web-ready totals.</p></section>
+<section id="rules" class="card"><h2>Official Rules</h2>
+<p>Everything needed to understand the contest is now available here on the website.</p>
+<div class="rulesgrid">
+<div class="rulebox"><h3>How to Play</h3><p>Pick one choice from each of Groups 1-14: 2 QBs, 4 RBs, 4 WRs, 1 TE, 1 kicker, 1 NFC D/ST and 1 AFC D/ST. Only teams playing Sunday at 1:00 PM ET or later are eligible. Weekly player pools are set when the sheet is created; if a listed player later becomes unavailable, the selection stands.</p></div>
+<div class="rulebox"><h3>Rush / Receive / Return TD</h3><p>0-9 yd: 8 &nbsp;|&nbsp; 10-19: 10 &nbsp;|&nbsp; 20-29: 12 &nbsp;|&nbsp; 30-39: 14 &nbsp;|&nbsp; 40-49: 16 &nbsp;|&nbsp; 50-59: 18 &nbsp;|&nbsp; 60-69: 20 &nbsp;|&nbsp; 70-79: 22 &nbsp;|&nbsp; 80-89: 24 &nbsp;|&nbsp; 90-99: 26</p></div>
+<div class="rulebox"><h3>Passing TD</h3><p>0-14 yd: 4 &nbsp;|&nbsp; 15-29: 6 &nbsp;|&nbsp; 30-44: 8 &nbsp;|&nbsp; 45-59: 10 &nbsp;|&nbsp; 60-74: 12 &nbsp;|&nbsp; 75-89: 14 &nbsp;|&nbsp; 90-99: 16</p></div>
+<div class="rulebox"><h3>Field Goals</h3><p>0-19 yd: 4 &nbsp;|&nbsp; 20-29: 5 &nbsp;|&nbsp; 30-39: 6 &nbsp;|&nbsp; 40-49: 8 &nbsp;|&nbsp; 50-59: 10 &nbsp;|&nbsp; 60+: 13</p></div>
+<div class="rulebox"><h3>Extra Points &amp; D/ST</h3><p>PAT: 1 point. Successful 2-point conversion by rush, reception or pass: 4 points. D/ST return TDs use the distance table above. Safety: 5 points. Shutout: 10 points.</p></div>
+<div class="rulebox"><h3>Weekly Bonus</h3><p>Predict the combined final score of the designated Sunday game. A prediction within 7 points above or below the actual combined score earns 5 bonus points.</p></div>
+</div></section>
 </main><footer>2026 The OB Memorial Fantasy Football Challenge</footer>
 </body></html>
